@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="20dp"
+        android:background="#1D2951">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Companio"
+            android:fontFamily="@font/aclonica"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textAlignment="center"/>
+        <TextView
+            android:paddingTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:fontFamily="@font/antic"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textAlignment="center"/>
+"
+
+        <ImageView
+            android:id="@+id/profilePic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/welcom"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/fullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monicah Cherop"
+            android:textSize="20sp"
+            android:fontFamily="@font/aclonica"
+            android:layout_toRightOf="@+id/profilePic"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:includeFontPadding="false"
+            android:layout_marginLeft="10dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textColor="#ffffff"
+            android:text="nicy Cheru"
+            android:textSize="14sp"
+            android:fontFamily="@font/aclonica"
+            android:layout_toRightOf="@+id/profilePic"
+           android:layout_below="@+id/fullName"
+            android:layout_marginLeft="10dp"
+
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+
+<LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+         android:layout_marginTop="-100dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="125dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="#C5C6D0"
+            app:cardElevation="10dp">
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/welcom"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:id="@+id/stories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stories"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/aclonica"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:id="@+id/memories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/antic"
+                    android:layout_below="@+id/stories"
+                    android:layout_centerHorizontal="true"/>
+
+
+
+
+
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+       <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="125dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="#C5C6D0"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/welcom"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/stories2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Memories"
+                android:textSize="20sp"
+                android:fontFamily="@font/aclonica"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/memories2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:textSize="30sp"
+                android:fontFamily="@font/antic"
+                android:layout_below="@+id/stories2"
+                android:layout_centerHorizontal="true"/>
+
+
+
+
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+       android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="name"
+
+        android:layout_marginBottom="10dp"
+        style="@style/OutlinedBoxRounded">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="monicah cherop"
+            android:drawablePadding="10dp"/>
+
+
+
+</com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="email"
+        android:layout_marginBottom="10dp"
+        style="@style/OutlinedBoxRounded">>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="naibei.cherop37@gmail.com"
+            android:drawablePadding="10dp"/>
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="phone number"
+        android:layout_marginBottom="10dp"
+        style="@style/OutlinedBoxRounded">>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="+ 254 708 432 460"
+            android:drawablePadding="10dp"/>
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_marginBottom="10dp"
+        style="@style/OutlinedBoxRounded">>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="1246789monche"
+            android:drawablePadding="10dp"/>
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:paddingTop="10dp"
+
+
+        android:paddingLeft="16dp"
+        android:id="@+id/update_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Update"
+        android:textSize="20sp"
+
+        android:textAlignment="center"
+        android:backgroundTint="#1D2951"
+        android:textColor="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="8dp"/>>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
